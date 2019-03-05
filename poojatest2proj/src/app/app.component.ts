@@ -7,31 +7,33 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'poojatest2proj';
+  appclicks;
 
-  
   i = 0;
   evenNumber = true;
   numofbtnclicks = [0];
 
-  constructor(){}
+  constructor() { }
 
-  Toggle()
-  {
+  Toggle() {
     this.i++;
     this.numofbtnclicks.push(this.i);
-     console.log(this.numofbtnclicks);
-      if(this.i % 2 === 0)
-      {
-        this.evenNumber=true;
-      }
-      else 
-      {
-        this.evenNumber=false;
-      }
-      
+    console.log(this.numofbtnclicks);
+    if (this.i % 2 === 0) {
+      this.evenNumber = true;
+    }
+    else {
+      this.evenNumber = false;
+    }
+
   }
 
- 
- 
-  
+  getColor(){
+    if(this.i>=5){
+      return this.appclicks='blue';
+    }
+     
+  }
+
+
 }

@@ -6,7 +6,12 @@
     <!-- <div *ngFor="let appclicks of numofbtnclicks" >
     
     </div> -->
-    <!-- <div *ngFor="let appclicks of numofbtnclicks">{{ appclicks }}</div> -->
-    <app-firstcomp *ngFor="let appclicks of numofbtnclicks"></app-firstcomp>
+
+    <div  *ngIf="i<=4"> <li *ngFor="let appclicks of numofbtnclicks">{{ appclicks }}</li></div>
+
+    <div *ngIf="i>=5">
+     <li [ngStyle]="{backgroundColor:getColor()}" *ngFor="let appclicks of numofbtnclicks">{{ appclicks }}</li></div>
+
+    <!-- <app-firstcomp *ngFor="let appclicks of numofbtnclicks"></app-firstcomp> -->
 
    
