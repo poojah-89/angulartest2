@@ -7,10 +7,11 @@
     
     </div> -->
 
-    <div  *ngIf="i<=4"> <li *ngFor="let appclicks of numofbtnclicks">{{ appclicks }}</li></div>
+    <div> <li [ngStyle]="{backgroundColor:getColor(hjd)}" *ngFor="let appclicks of numofbtnclicks; let hjd=index">{{ appclicks }}</li></div>
+    <!-- <div  *ngIf="i<=4"> <li *ngFor="let appclicks of numofbtnclicks">{{ appclicks }}</li></div> -->
 
-    <div *ngIf="i>=5">
-     <li [ngStyle]="{backgroundColor:getColor()}" *ngFor="let appclicks of numofbtnclicks">{{ appclicks }}</li></div>
+    <!-- <div *ngIf="i>=5">
+     <li [ngStyle]="{backgroundColor:getColor()}" *ngFor="let appclicks of numofbtnclicks">{{ appclicks }}</li></div> -->
 
     <!-- <app-firstcomp *ngFor="let appclicks of numofbtnclicks"></app-firstcomp> -->
 

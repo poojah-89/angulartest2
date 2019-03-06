@@ -28,8 +28,8 @@ export class AppComponent {
 
   }
 
-  getColor(){
-    if(this.i>=5){
+  getColor(abc){
+    if(abc>=5){
       return this.appclicks='blue';
     }
      
